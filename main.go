@@ -4,6 +4,7 @@ import (
     "fmt"
     "flag"
     "io/ioutil"
+    "gcompressor"
 )
 
 // Generic error handling
@@ -25,6 +26,7 @@ func main() {
         check(err)
         fmt.Print(string(dat))
 
+        // datCompressed := compress(string(dat))
         datCompressed := string(dat) + "compression?"
         datComp := []byte(datCompressed)
 
