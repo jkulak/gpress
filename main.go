@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"flag"
+    "fmt"
+    "flag"
     "io/ioutil"
 )
 
@@ -32,13 +32,7 @@ func main() {
         check(error)
     }
 
-
-
-    //  f.Close()
-
-
     // Debug part
     fmt.Println("sourceFile:", *sourceFile)
     fmt.Println("tail:", flag.Args())
-
 }
