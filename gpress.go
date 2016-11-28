@@ -27,16 +27,21 @@ func main() {
 
     paramSourceFile := flag.String("sourcefile", "", "a filename")
     paramVerbose := flag.Bool("verbose", false, "be verbose")
-    paramDecompress := flag.Bool("d", false, "decompress")
+    paramDecompress := flag.Bool("decompress", false, "decompress")
+    paramHelp := flag.Bool("help", false, "display help")
+    paramVersion := flag.Bool("version", false, "display program version")
 
     flag.Parse()
+
+    if *paramVersion {
+        fmt.Fprintf("gpress version 0.9   GCOMPRESSION lib version 0.0.1/2\nCopyright (C) 2016 by Jakub Kułak.\ngpress comes with ABSOLUTELY NO WARRANTY.  This is free software, and you are welcome to redistribute it under certain conditions.  See the GNU General Public Licence for details.");
+        os.Exit(0)
+    }
 
     if *paramSourceFile != "" {
         input, err := ioutil.ReadFile(*paramSourceFile)
         check(err)
         log(string(input), *paramVerbose)
-
-        // output := ""
 
         if *paramDecompress {
             output := gcompressor.Compress(string(input)) + "\n"
@@ -53,7 +58,7 @@ func main() {
         check(error)
     } else {
         fmt.Printf("You need to specify the sourcefile")
-        
+
     }
 
     // Debug part
