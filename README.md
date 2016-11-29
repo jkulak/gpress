@@ -41,3 +41,7 @@ Work inside the Docker container (you should set the GOPATH env variable)
 ```
 $ docker run --rm -ti -e "GOPATH=/root/go" -v "$PWD":/root/go -w /root/go golang:1.6 bash
 ```
+
+## Build and test status
+
+[![Build Status](https://travis-ci.org/jkulak/gpress.svg?branch=master)](https://travis-ci.org/jkulak/gpress)
