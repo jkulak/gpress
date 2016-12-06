@@ -3,6 +3,8 @@
 A command-line tool for compressing and decompressing files using GCOMPRESSOR library (https://github.com/jkulak/gcompressor).
 
 ![](https://raw.githubusercontent.com/jkulak/gpress/master/resources/compress.png)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jkulak/gpress)](https://goreportcard.com/report/github.com/jkulak/gpress)
+[![GoDoc](https://godoc.org/github.com/jkulak/gpress?status.svg)](https://godoc.org/github.com/jkulak/gpress)
 
 ## Usage
 
