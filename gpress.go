@@ -11,10 +11,10 @@ import (
 	"github.com/jkulak/gcompressor"
 )
 
-// Gpress version
+// Version indicates the application version
 const version string = "0.2"
 
-// Main functon runs the application
+// main functon runs the application
 func main() {
 
 	// Read options passed to execuatable
