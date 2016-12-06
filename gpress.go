@@ -1,3 +1,5 @@
+// Package main provides full functionality of the
+// gpress compressing application
 package main
 
 import (
