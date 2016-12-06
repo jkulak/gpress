@@ -3,8 +3,6 @@
 A command-line tool for compressing and decompressing files using GCOMPRESSOR library (https://github.com/jkulak/gcompressor).
 
 ![](https://raw.githubusercontent.com/jkulak/gpress/master/resources/compress.png)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jkulak/gpress)](https://goreportcard.com/report/github.com/jkulak/gpress)
-[![GoDoc](https://godoc.org/github.com/jkulak/gpress?status.svg)](https://godoc.org/github.com/jkulak/gpress)
 
 ## Usage
 
@@ -25,7 +23,7 @@ $ gpress --sourcefile file_to_compress.txt
 
 To decompress files
 ```
-$ gpress --decompress --sourcefile file_to_compress.txt
+$ gpress --decompress --sourcefile file_to_decompress.txt
 ```
 
 ## Compilation
@@ -44,6 +42,8 @@ Work inside the Docker container (you should set the GOPATH env variable)
 $ docker run --rm -ti -e "GOPATH=/root/go" -v "$PWD":/root/go -w /root/go golang:1.6 bash
 ```
 
-## Build and test status
+## Build, test and doc status
 
 [![Build Status](https://travis-ci.org/jkulak/gpress.svg?branch=master)](https://travis-ci.org/jkulak/gpress)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jkulak/gpress)](https://goreportcard.com/report/github.com/jkulak/gpress)
+[![GoDoc](https://godoc.org/github.com/jkulak/gpress?status.svg)](https://godoc.org/github.com/jkulak/gpress)
